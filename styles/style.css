@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #014444;
+  color: #fff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 0.85rem;
+}
+
+header,
+main,
+footer {
+  margin: 50px 010px;
+}
+
+button {
+  background-color: rgb(217, 141, 0);
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+/* Header section */
+header > * {
+  margin: 20px 0;
+}
+
+header p {
+  margin-top: 40px;
+}
+
+/* Main section */
+main > * {
+  margin: 50px 0;
+}
+
+.vid-div {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.gallery h1 {
+  font-size: 10vw;
+  margin: 50px 0 30px;
+}
+
+.gallery p {
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.gallery div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery div img {
+  margin: 1%;
+  width: 30%;
+  height: 30%;
+  border-radius: 15px;
+}
+
+.info h1 {
+  font-size: 6vw;
+}
+
+.info p {
+  margin: 10px 0 50px;
+}
+
+.info .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+}
+
+.info .cards div {
+  padding: 5%;
+  text-align: center;
+  background-color: rgb(255, 177, 81);
+}
+
+.info .cards div > * {
+  margin: 3%;
+}
+
+
+.info .cards div span {
+  margin-top: 0;
+}
+
+.info .cards div p {
+  margin-bottom: 2%;
+} 
+
+/* Footer section */
+/* media queries */
+
+@media (max-width: 400px) {
+  img {
+    width: 50%;
+  }
+  .gallery div {
+    flex-direction: column;
+  }
+  .gallery div img {
+    margin-bottom: 5%;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+  }
+  .info .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+  }
+  .info .cards div {
+    margin-bottom: 10%;
+  }
+}
