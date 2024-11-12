@@ -131,6 +131,38 @@ main > * {
   margin-bottom: 2%;
 } 
 
+.reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 0 5%;
+}
+
+.reviews p{
+  margin-top: 2%;
+  font-weight: lighter;
+}
+
+.reviews img{
+  width: 50%;
+  height: 50%;
+}
+
+.table{
+  background-color: white;
+  padding: 2%;
+  color: #000;
+}
+
+.table h2{
+  margin-bottom: 2%;
+}
+
+.table th, tr, td{
+  border: 1px solid rgb(89, 77, 255);
+}
+
 /* Footer section */
 /* media queries */
 
@@ -159,5 +191,9 @@ main > * {
   }
   .info .cards div {
     margin-bottom: 10%;
+  }
+  .reviews{
+    flex-direction: column;
+    gap: 20px;
   }
 }
